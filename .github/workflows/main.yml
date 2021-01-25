@@ -29,6 +29,6 @@ jobs:
         with:
           context: "."
           tags: |
-            ghcr.io/${{ env.GITHUB_REPOSITORY }}:${{ env.BUILD_TAG }}
-            ghcr.io/${{ env.GITHUB_REPOSITORY }}:${{ env.BUILD_SHA }}
+            ghcr.io/${{ github.repository }}:${{ env.BUILD_TAG }}
+            ghcr.io/${{ github.repository }}:${{ env.BUILD_SHA }}
           push: true
